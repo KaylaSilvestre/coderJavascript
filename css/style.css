@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAF9F6;
+  font-family: "Inter", sans-serif;
+  color: #2E4C3F;
+  font-weight: 400;
+  padding-top: 120px; 
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+    flex: 1; /* Esto hace que main ocupe todo el espacio disponible */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #546B56;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #353535;
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+}
+
+div.popup {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #f8b195, #f67280);
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  animation: slideDown 0.5s ease-out;
+  overflow: hidden;
+}
+
+div.popup p {
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+header,
+footer {
+  background-color: #AAB39C;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #AAB39C;
+  border-top: 5px solid #f8b195; /* franja rosada superior */
+  z-index: 10;
+  padding: 10px 0;
+border-top: none; /* por si el borde rosa lo está causando */
+}
+
+/* Contenedor principal del header */
+header .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* LOGO */
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 55px;
+  height: auto;
+}
+
+header .logo .logo-titulo {
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+/* MENÚ */
+header nav.menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header nav.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav.menu ul li a {
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+}
+
+header nav.menu ul li a:hover {
+  color: #5a6452;
+}
+
+header nav.menu ul a.pagina-actual {
+  text-decoration: underline 2px #5a6452;
+  font-weight: 600;
+  color: #5a6452;
+}
+
+/* ÍCONOS */
+header .iconos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .iconos a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header .iconos a:hover {
+  color: #5a6452;
+}
+
+main h1#slogan {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px;
+}
+
+footer {
+  border-top: 1px solid #8a8585;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #AAB4A0;
+  padding: 10px;
+}
+footer div.iconos-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  padding-left: 36px;
+}
+footer p {
+  color: #333;
+}
+
