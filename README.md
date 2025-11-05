@@ -15,11 +15,9 @@ A medida que avance, se irán agregando nuevas secciones y funciones relacionada
 ## 💡 Objetivo
 Aprender y practicar JavaScript mientras desarrollo una versión inicial de la web de **Hecho Pa'Mí**.
 
-
-🌐 Ver demo 👉 <p align="center">
-  <a href="https://KaylaSilvestre.github.io/coderJavascript/">
-    <img src="https://img.shields.io/badge/🌐%20Abrir%20Demo%20en%20GitHub%20Pages-blue?style=for-the-badge" alt="Abrir Demo">
-  </a>
-</p>
+<span>🌐 Ver demo 👉</span>
+<a href="https://KaylaSilvestre.github.io/coderJavascript/">
+  <img src="https://img.shields.io/badge/🌐%20ABRIR%20DEMO%20EN%20GITHUB%20PAGES-blue?style=for-the-badge" alt="Abrir Demo" />
+</a>
 
 💖 Desarrollado con dedicación por [Kay](https://github.com/KaylaSilvestre)
